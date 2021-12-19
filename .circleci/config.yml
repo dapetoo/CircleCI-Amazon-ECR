@@ -70,9 +70,9 @@ jobs:
     steps:
          - checkout
          - run: |
-            docker build -t greentropikal/flaskappeks:latest .
+            docker build -t dapetoo/flaskappeks:latest .
             echo $DOCKERHUB_PASSWORD | docker login -u $DOCKER_LOGIN --password-stdin
-            docker push greentropikal/flaskappeks:latest
+            docker push dapetoo/flaskappeks:latest
 
 
   # Creation of Cluster        
