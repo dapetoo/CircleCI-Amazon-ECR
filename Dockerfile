@@ -1,5 +1,5 @@
 FROM python:3.10.0-bullseye
-LABEL maintainer="My Name"
+LABEL maintainer="Nelson Okoye"
 
 ## Step 1:
 # Create a working directory

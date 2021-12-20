@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sampleclusters
+  name: flaskclusterapp
   labels:
-    app: sampleclusters
+    app: flaskclusterapp
   
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: sampleclusters
+      app: flaskclusterapp
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -18,12 +18,12 @@ spec:
   template:
     metadata:
       labels:
-        app: sampleclusters
+        app: flaskclusterapp
     spec:
       containers:
         - image: dapetoo/flaskappeks:latest
           imagePullPolicy: Always
-          name: sampleclusters
+          name: flaskclusterapp
           ports:
             - containerPort: 80
           resources:
