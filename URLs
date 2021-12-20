@@ -1,0 +1,5 @@
+github repo: https://github.com/dapetoo/CircleCI-Amazon-ECR
+            https://github.com/dapetoo/CircleCI-Amazon-ECR/blob/main/Dockerfile
+            https://github.com/dapetoo/CircleCI-Amazon-ECR/blob/main/app/templates/index.html
+
+Live Demo: http://a12f55a54f2a148a1a5476d9937733df-1732378230.us-west-2.elb.amazonaws.com/
